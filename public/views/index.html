@@ -1,11 +1,56 @@
 <!doctype html>
+<!--[if lt IE 7]>      <template class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <template class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <template class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Locational CMS</title>
-    <script>
-        window.current_user_id = '<%- current_user_id %>';
-    </script>
+
+    <link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="css/app.css" rel="stylesheet">
+
+  <script>
+    window.current_user_id = '<%- current_user_id %>';
+  </script>
 </head>
-    <body>
-        <a href="/login">Login to google here</a>
-    </body>
+</html>
+
+<body ng-app="ngHere" class="splash">
+    <div ng-controller="SplashCtrl as splash" class="ng-cloak">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <p class='name'>Hello</p>
+                    <p class='tag'><i>There's a Story Here.</i></p>
+<!--                     <a class='find'>Find the story</a><br />
+                    <a class='tell'>Tell the story</a>
+
+ -->
+                    <!-- Originally: ng-click="splash.loginView = true" -->
+                    <a class='find' href="/login">Log in to find it</a>
+                </div>
+                <!-- <div class="col-xs-12" ng-if='splash.loginView'>
+                    <ng-form class='login-form'>
+                        <input type='text' placeholder='Your name' />
+                        <input type='email' placeholder='Your email' />
+                        <button class='btn button' ng-click='splash.login()'>Submit</button>
+                    </ng-form>
+                </div> -->
+            </div>
+        </div>
+<!--         <a class="about">About</a> -->  
+    </div>
+
+
+    <script src="/bower_components/angular/angular.min.js"></script>
+    <script src="/bower_components/angular-mocks/angular-mocks.js"></script>
+    <script src="/bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="/js/app.js"></script>
+    <!-- <script src="/js/services/StoryAPI.service.js"></script> -->
+    <script src="/js/controller/splashCtrl.js"></script>
+</body>
 </html>

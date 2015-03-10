@@ -1,0 +1,66 @@
+body {
+  color: #ffffff;
+  background-color: #909909; }
+
+.splash {
+  height: 100%;
+  text-align: center;
+  margin: 0 auto;
+  font-family: Helvetica; }
+  .splash .name {
+    margin-top: 20%;
+    color: #222;
+    font-size: 2em;
+    font-weight: 200;
+    letter-spacing: -2px; }
+  .splash .tag {
+    margin-top: 20px;
+    color: #333;
+    font-size: 1.3em;
+    font-weight: 200;
+    letter-spacing: -1px;
+    text-decoration: italic; }
+  .splash a.login {
+    display: inline-block;
+    color: #ffffff;
+    margin: 50px auto; }
+  .splash a.find, .splash a.tell {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    font-size: 1.2em;
+    font-weight: 200; }
+    .splash a.find:hover, .splash a.find:active, .splash a.find:visited, .splash a.tell:hover, .splash a.tell:active, .splash a.tell:visited {
+      background-color: rgba(255, 255, 255, 0.2);
+      text-decoration: none; }
+  .splash a.find {
+    margin-top: 50%;
+    margin-bottom: 30px; }
+  .splash .login-form {
+    margin-top: 50px;
+    padding: 20px; }
+    .splash .login-form input {
+      display: block;
+      margin: 20px auto;
+      padding: 10px !important;
+      color: #000; }
+
+@media all and (max-width: 400px) {
+  .splash {
+    background: #333 url('../images/trees-400x900.png') no-repeat fixed;
+    background-position: contain; } }
+
+@media all and (min-width: 401px) and (max-width: 768px) {
+  .splash {
+    background: #333 url('../images/trees-700x1200.png') no-repeat center;
+    background-position: contain; } }
+
+@media all and (min-width: 769px) {
+  .splash {
+    background: #333 url('../images/trees.jpeg') no-repeat fixed center; } }
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important; }

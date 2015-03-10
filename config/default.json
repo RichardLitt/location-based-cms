@@ -14,7 +14,7 @@
     },
     "databases":{
         "domain":{
-            "uri": "mongodb://.."
+            "uri": "mongodb://password:password@ds053251.mongolab.com:53251/location-based-cms"
         }
     },
     "cloudinary":{

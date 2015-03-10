@@ -19,6 +19,12 @@ for domain data, rackspace for random media storage, and cloudinary for image ma
 5. Run ```npm start``` and make sure that the server starts without errors.
 6. Go to localhost:8080 in a browser. Also check out '/login' and '/docs' in the browser. 
 
+** Front End Setup **
+
+Run `gulp --watch`. If you add images, run `gulp image` after adding them into the `./pictures` folder, so that the minified versions will be put into `.public/pictures`. 
+
+If you need to, run `bower install`. Generally a good idea.
+
 **Run the following scripts to test the setup:**
 
 * `npm test`
@@ -26,7 +32,6 @@ for domain data, rackspace for random media storage, and cloudinary for image ma
 * `npm run modules`
 
 Feel welcome to shoot me a GitHub message if you have any questions.
-
 
 
 

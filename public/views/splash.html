@@ -1,0 +1,36 @@
+<!doctype html>
+<!--[if lt IE 7]>      <template class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <template class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <template class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Story Here</title>
+
+    <link href="css/app.css" media="all" rel="stylesheet" type="text/css" />
+
+  <script>
+    window.current_user_id = '<%- current_user_id %>';
+  </script>
+</head>
+<body ng-app="ngHere">
+
+    This is in the splash file.
+
+    <div ng-controller="SplashCtrl as splash" class="ng-cloak">
+        <p>Hello {{splash.yourName}}.</p>
+        <p>Your id is: {{splash.yourId}}.</p>
+    </div>
+
+    <script src="/bower_components/angular/angular.min.js"></script>
+    <script src="/bower_components/angular-mocks/angular-mocks.js"></script>
+    <script src="/bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="/js/app.js"></script>
+    <!-- <script src="/js/routes.js"></script> -->
+    <script src="/js/controller/splashCtrl.js"></script>
+    <!-- <script src="/public/js/service/name-service.js"></script> -->
+</body>
+</html>

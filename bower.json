@@ -1,0 +1,27 @@
+{
+  "name": "location-based-cms",
+  "version": "0.0.0",
+  "homepage": "https://github.com/VladVega/location-based-cms",
+  "authors": [
+    "Vlad Vega <vlad.b.vega@gmail.com",
+    "Richard Littauer <richard.littauer@gmail.com>"
+  ],
+  "description": "Tell stories where you are",
+  "keywords": [
+    "geolocation",
+    "node",
+    "stories"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "cli_test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.2.0"
+  }
+}

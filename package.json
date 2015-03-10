@@ -1,5 +1,5 @@
 {
-  "name": "here-project",
+  "name": "location-based-cms",
   "version": "0.0.0-3",
   "description": "Locational cms.",
   "main": "private/src/app.js",
@@ -31,7 +31,17 @@
     "node": "0.10.x"
   },
   "devDependencies": {
+    "angular": "^1.2.21",
+    "angular-ui-router": "^0.2.10",
     "dependency-check": "~1.1.5",
+    "gulp": "^3.8.7",
+    "gulp-image": "^0.4.3",
+    "gulp-jsdoc": "^0.1.4",
+    "gulp-karma": "0.0.4",
+    "gulp-minify-css": "^0.3.7",
+    "gulp-plumber": "^0.6.5",
+    "gulp-sass": "^0.7.3",
+    "gulp-watch": "^0.7.0",
     "jscs": "~1.5.8",
     "jshint": "^2.5.2",
     "jshint-stylish": "^0.4.0",
